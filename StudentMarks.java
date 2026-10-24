@@ -22,3 +22,4 @@ public class StudentMarks {
         // Step 4: Sara ke marks update karein[cite: 1]
         studentMap.put("Sara", 84);
         System.out.println("\nUpdated Sara's marks to: " + studentMap.get("Sara"));
+        

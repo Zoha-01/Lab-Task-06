@@ -22,4 +22,8 @@ public class StudentMarks {
         // Step 4: Sara ke marks update karein[cite: 1]
         studentMap.put("Sara", 84);
         System.out.println("\nUpdated Sara's marks to: " + studentMap.get("Sara"));
-        
+        // Step 5: Retrieve and total count[cite: 1]
+        System.out.println("Ali's Marks: " + studentMap.get("Ali"));
+        System.out.println("Total students in map: " + studentMap.size());
+    }
+}

@@ -31,3 +31,13 @@ public class StudentMarksQ4 {
             }
             System.out.println(entry.getKey() + " (Marks: " + marks + ") -> Grade: " + grade);
         }
+        // Step 3: Count and Display Grade A Students
+        int gradeACount = 0;
+        System.out.println("\n--- Grade A Students ---");
+        for (Map.Entry<String, Integer> entry : studentMap.entrySet()) {
+            if (entry.getValue() >= 90) {
+                System.out.println(entry.getKey() + ": " + entry.getValue());
+                gradeACount++;
+            }
+        }
+        System.out.println("Total Grade A Students: " + gradeACount);

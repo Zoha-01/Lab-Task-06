@@ -15,3 +15,19 @@ public class StudentMarksQ4 {
         }
     }
 }
+// Step 2: Assign Grades Based on Marks
+        System.out.println("\n--- Student Grades ---");
+        for (Map.Entry<String, Integer> entry : studentMap.entrySet()) {
+            int marks = entry.getValue();
+            char grade;
+            if (marks >= 90) {
+                grade = 'A';
+            } else if (marks >= 80) {
+                grade = 'B';
+            } else if (marks >= 70) {
+                grade = 'C';
+            } else {
+                grade = 'F';
+            }
+            System.out.println(entry.getKey() + " (Marks: " + marks + ") -> Grade: " + grade);
+        }

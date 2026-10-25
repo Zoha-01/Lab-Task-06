@@ -9,3 +9,13 @@ public class StudentMarksQ2 {
         studentMap.put("Sara", 78);
         studentMap.put("Usman", 92);
         studentMap.put("Zainab", 88);
+
+        // 1. Search student
+        String searchName = "Usman";
+        if (studentMap.containsKey(searchName)) {
+            System.out.println("[Search] " + searchName + " exists with marks: " + studentMap.get(searchName));
+        } else {
+            System.out.println("[Search] " + searchName + " not found.");
+        }
+    }
+}

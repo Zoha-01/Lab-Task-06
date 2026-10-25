@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Map;
 
 public class StudentMarksQ2 {
     public static void main(String[] args) {
@@ -27,5 +28,16 @@ public class StudentMarksQ2 {
         for (String student : studentMap.keySet()) {
             System.out.println("Student: " + student + " | Marks: " + studentMap.get(student));
         }
+        // 4. Find highest scorer
+        String topStudent = "";
+        int maxMarks = -1;
+
+        for (Map.Entry<String, Integer> entry : studentMap.entrySet()) {
+            if (entry.getValue() > maxMarks) {
+                maxMarks = entry.getValue();
+                topStudent = entry.getKey();
+            }
+        }
+        System.out.println("\nTop Scorer: " + topStudent + " with " + maxMarks + " marks.");
     }
 }

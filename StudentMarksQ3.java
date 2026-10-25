@@ -24,3 +24,14 @@ public class StudentMarksQ3 {
             studentMap.put(searchName, 95); // Updating Ali's marks to 95
             System.out.println("\n[Updated] " + searchName + "'s new marks: " + studentMap.get(searchName));
         }
+        // --- NAYA CODE (Step 3 ke liye) ---
+        // Remove student and calculate average
+        studentMap.remove("Sara");
+        System.out.println("\n[Removed] Sara's record removed.");
+
+        int totalMarks = 0;
+        for (int marks : studentMap.values()) {
+            totalMarks += marks;
+        }
+        double average = (double) totalMarks / studentMap.size();
+        System.out.println("Average Marks of Remaining Students: " + average);

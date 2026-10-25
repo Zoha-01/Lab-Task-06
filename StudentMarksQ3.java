@@ -17,3 +17,10 @@ public class StudentMarksQ3 {
         }
     }
 }
+// --- NAYA CODE (Step 2 ke liye) ---
+        // Search student and update marks
+        String searchName = "Ali";
+        if (studentMap.containsKey(searchName)) {
+            studentMap.put(searchName, 95); // Updating Ali's marks to 95
+            System.out.println("\n[Updated] " + searchName + "'s new marks: " + studentMap.get(searchName));
+        }

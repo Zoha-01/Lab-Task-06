@@ -35,3 +35,4 @@ public class StudentMarksQ3 {
         }
         double average = (double) totalMarks / studentMap.size();
         System.out.println("Average Marks of Remaining Students: " + average);
+        

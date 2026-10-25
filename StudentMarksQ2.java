@@ -17,5 +17,15 @@ public class StudentMarksQ2 {
         } else {
             System.out.println("[Search] " + searchName + " not found.");
         }
+        // 2. Remove student
+        String removeName = "Ahmed";
+        studentMap.remove(removeName);
+        System.out.println("\n[Remove] Successfully removed record for: " + removeName);
+
+        // 3. Display remaining students
+        System.out.println("\n--- Remaining Students List ---");
+        for (String student : studentMap.keySet()) {
+            System.out.println("Student: " + student + " | Marks: " + studentMap.get(student));
+        }
     }
 }

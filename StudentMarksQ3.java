@@ -3,7 +3,7 @@ import java.util.Map;
 
 public class StudentMarksQ3 {
     public static void main(String[] args) {
-        // Initial setup
+        // Step 1: Initial setup
         HashMap<String, Integer> studentMap = new HashMap<>();
         studentMap.put("Ali", 85);
         studentMap.put("Ahmed", 90);
@@ -15,17 +15,15 @@ public class StudentMarksQ3 {
         for (Map.Entry<String, Integer> entry : studentMap.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
-    }
-}
-// --- NAYA CODE (Step 2 ke liye) ---
-        // Search student and update marks
+
+        // Step 2: Search and update logic
         String searchName = "Ali";
         if (studentMap.containsKey(searchName)) {
-            studentMap.put(searchName, 95); // Updating Ali's marks to 95
+            studentMap.put(searchName, 95);
             System.out.println("\n[Updated] " + searchName + "'s new marks: " + studentMap.get(searchName));
         }
-        // --- NAYA CODE (Step 3 ke liye) ---
-        // Remove student and calculate average
+
+        // Step 3: Remove record and average calculation
         studentMap.remove("Sara");
         System.out.println("\n[Removed] Sara's record removed.");
 
@@ -35,4 +33,5 @@ public class StudentMarksQ3 {
         }
         double average = (double) totalMarks / studentMap.size();
         System.out.println("Average Marks of Remaining Students: " + average);
-        
+    }
+}
